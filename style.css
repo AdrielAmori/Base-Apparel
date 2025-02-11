@@ -108,7 +108,7 @@ input:focus {
 .error-icon {
   display: none;
   position: absolute;
-  right: 10px;
+  right: 85px;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;
