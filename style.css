@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+  margin: 5% auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 55% 45%;
+  border: 1px solid red;
+}
+
+#text{
+  padding-top: 30px;
+  padding-left: 50px;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#text #logo{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+#textForm{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Josefin Sans", serif;
+}
+
+#textForm h1{
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  line-height: 1.2;
+}
+
+#textForm p{
+  font-size: 16px;
+  color: hsl(0, 80%, 86%);
+}
+
+#textForm span{
+  color: hsl(0, 36%, 70%);
+}
+
+#img{
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/hero-desktop.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+form{
+  display: flex;
+  position: relative;
+  width: 70%;
+}
+
+form input{
+  border-radius: 50px;
+  border: 1px solid hsl(0, 80%, 86%);
+  width: 90%;
+  padding: 14px;
+  font-family: "Josefin Sans", serif;
+  color: hsl(0, 36%, 70%);
+}
+
+form input::placeholder{
+  color: hsl(0, 36%, 70%);
+}
+
+button{
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  width: 70px;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
