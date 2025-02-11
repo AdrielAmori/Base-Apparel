@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-  width: 1000px;
-  height: 600px;
+  width: 1200px;
+  height: 650px;
   margin: 5% auto;
   display: grid;
   grid-auto-flow: column;
@@ -14,45 +14,50 @@ body {
   border: 1px solid red;
 }
 
-#text{
+#text {
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 100px;
   background-image: url(./images/bg-pattern-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#text #logo{
+#text #logo {
   margin-top: 30px;
   margin-bottom: 100px;
 }
 
-#textForm{
+#textForm {
   display: flex;
   flex-direction: column;
   text-align: left;
   font-family: "Josefin Sans", serif;
 }
 
-#textForm h1{
-  font-size: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  line-height: 1.2;
+#textForm span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
 }
 
-#textForm p{
+#textForm h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+#textForm p {
   font-size: 16px;
   color: hsl(0, 80%, 86%);
+  line-height: 1.5;
+  text-align: justify;
+  width: 428px;
 }
 
-#textForm span{
-  color: hsl(0, 36%, 70%);
-}
-
-#img{
+#img {
   margin: 0;
   padding: 0;
   background-image: url(./images/hero-desktop.jpg);
@@ -60,32 +65,63 @@ body {
   width: 100%;
 }
 
-form{
+form {
   display: flex;
   position: relative;
   width: 70%;
+  margin-top: 30px;
+  margin-bottom: 10;
 }
 
-form input{
+form div {
+  display: flex;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
   border-radius: 50px;
   border: 1px solid hsl(0, 80%, 86%);
-  width: 90%;
+  width: 100%;
   padding: 14px;
   font-family: "Josefin Sans", serif;
   color: hsl(0, 36%, 70%);
 }
 
-form input::placeholder{
-  color: hsl(0, 36%, 70%);
+input::placeholder {
+  color: hsl(0, 80%, 86%);
 }
 
-button{
+input:focus {
+  outline: none;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 90px;
+  top: 22%;
+  /* top: 50%; */
+  /* transform: translateY(-50%);
+  width: 20px;
+  height: 20px; */
+}
+
+button {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   width: 70px;
   border: 0;
-  border-radius: 50px;
+  border-radius: 150px;
   padding: 10px;
   position: absolute;
   right: 0;
   cursor: pointer;
+}
+
+#resultMessage {
+  padding-left: 15px;
+  font-family: "Josefin Sans", serif;
 }
