@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       resultMessage.style.color = "green";
       errorIcon.style.display = "none";
     } else {
-      resultMessage.textContent = "Email inválido";
+      resultMessage.textContent = "Please provide a valid email";
       resultMessage.style.color = "red";
       errorIcon.style.display = "block";
     }
