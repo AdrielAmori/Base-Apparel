@@ -121,6 +121,12 @@ button {
   cursor: pointer;
 }
 
+button:hover{
+  background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+  width: 80px;
+  transition: 0.5s;
+}
+
 #resultMessage {
   padding-left: 15px;
   font-family: "Josefin Sans", serif;
