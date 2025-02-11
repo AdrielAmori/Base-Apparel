@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", function() {
   var resultMessage = document.getElementById('resultMessage');
   var emailForm = document.getElementById('emailForm');
   var errorIcon = document.getElementById('errorIcon');
+  var imgElement = document.querySelector('#img img');
+
+  function updateImageSrc() {
+    if (window.innerWidth <= 768) {
+      imgElement.src = './images/hero-mobile.jpg';
+    } else {
+      imgElement.src = './images/hero-desktop.jpg';
+    }
+  }
+
+  // Atualiza a imagem ao carregar a página
+  updateImageSrc();
+
+  // Atualiza a imagem ao redimensionar a janela
+  window.addEventListener('resize', updateImageSrc);
 
   emailForm.addEventListener('submit', function(event) {
     event.preventDefault();

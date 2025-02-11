@@ -8,10 +8,9 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 800px;
-  margin: 5% auto;
+  margin: 10% auto;
   display: grid;
   grid-template-columns: 55% 45%;
-  border: 1px solid red;
 }
 
 #text {
@@ -135,4 +134,38 @@ button:hover {
 #resultMessage {
   padding-left: 15px;
   font-family: "Josefin Sans", serif;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #text {
+    padding-left: 20px; /* Ajusta o padding para telas menores */
+    padding-right: 20px; /* Adiciona padding à direita para telas menores */
+  }
+
+  #textForm p {
+    width: 100%; /* Ajusta a largura do parágrafo para 100% */
+  }
+
+  form {
+    width: 100%; /* Ajusta a largura do formulário para 100% */
+  }
+
+  .input-container {
+    width: 100%; /* Ajusta a largura do contêiner de entrada para 100% */
+  }
+
+  button {
+    right: 0px; /* Ajusta a posição do botão para telas menores */
+  }
+
+  .error-icon {
+    right: 100px; /* Ajusta a posição do ícone de erro para telas menores */
+  }
+
 }
